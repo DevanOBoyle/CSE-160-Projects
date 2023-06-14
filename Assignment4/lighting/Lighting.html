@@ -1,0 +1,99 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Lighting</title>
+    </head>
+
+    <body onload="main()">
+        <div style="display: flex">
+            <div>
+                <p>
+                    <canvas id="webgl" width="600" height="600">
+                        Please use a browser that supports "canvas"
+                    </canvas>
+                </p>
+
+                <p id="numdot">XXX</p>
+                <p>
+                    <button id="normalOn">Normal On</button>
+                    <button id="normalOff">Normal Off</button>
+                </p>
+                <p>
+                    <button id="lightOn">Light On</button>
+                    <button id="lightOff">Light Off</button>
+                </p>
+                <p>
+                    Camera X
+                    <input
+                        type="range"
+                        min="-360"
+                        max="360"
+                        value="5"
+                        class="slider"
+                        id="cameraSlideX"
+                    />
+                </p>
+                <p>
+                    Camera Y
+                    <input
+                        type="range"
+                        min="-360"
+                        max="360"
+                        value="5"
+                        class="slider"
+                        id="cameraSlideY"
+                    />
+                </p>
+                <p>
+                    Light X
+                    <input
+                        type="range"
+                        min="-1000"
+                        max="1000"
+                        value="5"
+                        class="slider"
+                        id="lightSlideX"
+                    />
+                </p>
+                <p>
+                    Light Y
+                    <input
+                        type="range"
+                        min="-1000"
+                        max="1000"
+                        value="5"
+                        class="slider"
+                        id="lightSlideY"
+                    />
+                </p>
+                <p>
+                    Light Z
+                    <input
+                        type="range"
+                        min="-1000"
+                        max="1000"
+                        value="5"
+                        class="slider"
+                        id="lightSlideZ"
+                    />
+                </p>
+            </div>
+        </div>
+
+        <script src="../lib/webgl-utils.js"></script>
+        <script src="../lib/webgl-debug.js"></script>
+        <script src="../lib/cuon-utils.js"></script>
+        <script src="../lib/cuon-matrix.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Cube.js"></script>
+        <script src="TriPrism.js"></script>
+        <script src="Sphere.js"></script>
+        <script src="Cylinder.js"></script>
+        <script src="Camera.js"></script>
+        <script src="Lighting.js"></script>
+    </body>
+</html>

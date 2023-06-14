@@ -1,0 +1,182 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blocky Animal</title>
+    </head>
+
+    <body onload="main()">
+      <div style="display: flex">
+      <div>
+        <p>
+            <canvas id="webgl" width="400" height="400">
+                Please use a browser that supports "canvas"
+            </canvas>
+        </p>
+
+        <p id="numdot">XXX</p>
+      </div>
+      <div style="margin-left: 10px">
+        <p>
+            Camera X
+            <input
+                type="range"
+                min="-360"
+                max="360"
+                value="5"
+                class="slider"
+                id="cameraSlideX"
+            />
+        </p>
+        <p>
+          Camera Y
+          <input
+              type="range"
+              min="-360"
+              max="360"
+              value="5"
+              class="slider"
+              id="cameraSlideY"
+          />
+      </p>
+        <p>Left Arm
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="leftArmSlide"
+            />
+        </p>
+        <p>Left Forearm
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="leftForearmSlide"
+            />
+        </p>
+        <p>Left Hand
+          <input
+          type="range"
+                min="-60"
+                max="60"
+                value="5"
+                class="slider"
+                id="leftHandSlide"
+            />
+        </p>
+        <p>Right Arm
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="rightArmSlide"
+            />
+        </p>
+        <p>Right Forearm
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="rightForearmSlide"
+            />
+        </p>
+        <p>Right Hand
+          <input
+          type="range"
+                min="-60"
+                max="60"
+                value="5"
+                class="slider"
+                id="rightHandSlide"
+            />
+        </p>
+        <p>Left Thigh
+          <input
+          type="range"
+                min="-60"
+                max="60"
+                value="5"
+                class="slider"
+                id="leftThighSlide"
+            />
+        </p>
+         <p>Left Calf
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="leftCalfSlide"
+            />
+        </p>
+        <p>Left Foot
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="leftFootSlide"
+            />
+        </p>
+        <p>Right Thigh
+          <input
+          type="range"
+                min="-60"
+                max="60"
+                value="5"
+                class="slider"
+                id="rightThighSlide"
+            />
+        </p>
+         <p>Right Calf
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="rightCalfSlide"
+            />
+        </p>
+        <p>Right Foot
+          <input
+          type="range"
+                min="-30"
+                max="30"
+                value="5"
+                class="slider"
+                id="rightFootSlide"
+            />
+        </p>
+        <button id="animation">Animation Toggle</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <script src="../lib/webgl-utils.js"></script>
+      <script src="../lib/webgl-debug.js"></script>
+      <script src="../lib/cuon-utils.js"></script>
+      <script src="../lib/cuon-matrix.js"></script>
+      <script src="Triangle.js"></script>
+      <script src="Cube.js"></script>
+      <script src="TriPrism.js"></script>
+      <script src="Sphere.js"></script>
+      <script src="Cylinder.js"></script>
+      <script src="BlockyAnimal.js"></script>
+    </body>
+</html>
